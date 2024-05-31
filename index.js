@@ -1,3 +1,11 @@
+let canvas;
+try {
+  canvas = require('canvas');
+} catch (err) {
+  console.warn('Canvas module is not available:', err);
+}
+
+
 const express = require('express');
 const multer = require('multer');
 const { promises: fs } = require('fs');
